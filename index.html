@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flickr search app | search pictures | gallery | JavaScript | sök bilder | bildgalleri"
+    />
+    <meta
+      name="keywords"
+      content="flickr, search app, search pictures, gallery, bildgalleri, sök bilder, front-end, webbutvecklare, utvecklare, programmering, webbdesign, web design, HTML, CSS, JavaScript, Malgorzata Pick"
+    />
+    <meta name="author" content="Malgorzata Pick" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/anime.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico&family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/lens.png" type="image/jpg" sizes="16x16" />
+    <title>Flickr Search App</title>
+  </head>
+  <body>
+    <main class="column">
+        <div>
+      <!-- Header -->
+      <header>
+        <h1>Flickr Search App</h1>
+      </header>
+      <!-- Inputs and buttons-->
+      <div class="menu">
+        <div class="inputs">
+            <input type="text" placeholder="Enter text to search" id="text" />
+            <select name="size" id="size">
+            <option value="default">Size:</option>
+            <option value="w">small</option>
+            <option value="z">medium</option>
+            <option value="b">large</option>
+            </select>
+            <input type="number" placeholder="Quantity" id="quantity" />
+        </div>
+        <div class="buttons">
+        <button type="input" id="search">Search</button>
+        <button type="button" id="slide-switch">Slide show</button>
+        <button type="button" id="reset">Reset</button>
+        </div>
+      </div>
+      <!-- End inputs and buttons -->
+      <!-- Spinner -->
+      <div class="spinner-wrapper row">
+        <div class="spinner-dot dot-one"></div>
+        <div class="spinner-dot"></div>
+        <div class="spinner-dot dot-three"></div>
+      </div>
+      <!-- End of spinner -->
+      <!-- Slideshow gallery -->
+      <div class="slide-show column">
+        <div class="row">
+          <button class="slide-btn" id="prev">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button class="slide-btn" id="next">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+      <!-- End of slideshow gallery -->
+      <!-- Gallery -->
+      <div class="gallery row">
+        <!-- <img src="img/lens_512.png" id="index-img" /> -->
+        <picture>
+            <source
+              srcset="img/lens_192.png"
+              media="(max-width: 420px)"
+            />
+            <source
+              srcset="img/lens_256.png"
+              media="(max-width: 775px)"
+            />
+            <img src="img/lens_512.png" alt="lens" id="index-img"/>
+          </picture>
+      </div>
+      <!-- End of gallery -->
+      <!-- Message Modal -->
+      <div id="message-modal" class="modal-background">
+        <!-- Modal content -->
+        <div class="modal-container">
+          <div class="modal-header">
+            <div>
+              Message.<span class="close" id="error-close" title="Close"
+                >&times;</span
+              >
+            </div>
+          </div>
+          <div class="column">
+            <p class="message row2" id="error-message"></p>
+            <div class="row2">
+              <button
+                type="submit"
+                class="message-button"
+                id="ok-button"
+                title="OK"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Message Modal -->
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <span id="chevron" title="To the top"
+          ><a href="#"><i class="fas fa-chevron-circle-up"></i></a
+        ></span>
+        <p class="copyright">Copyright &copy; 2021 | Malgorzata Pick</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+  </body>
+</html>
