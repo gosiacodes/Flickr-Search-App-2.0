@@ -43,7 +43,6 @@ const getInputValues = () => {
     else if (size === 'default'){
         message.innerText = 'Select size!';
         showMessageModal();
-
     }
     else if (quantity == ''){
         message.innerText = 'Enter quantity!';
@@ -68,7 +67,7 @@ const searchPictures = (textToSearch, size, quantity) => {
 
     fetch(url).then(
         function(response){
-            //return response.json();
+            //return response.json();   
             if (response.status >= 200 && response.status < 300) {
                 return response.json(); 
             } else {
