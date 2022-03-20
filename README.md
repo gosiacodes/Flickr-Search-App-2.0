@@ -12,3 +12,10 @@ You can also reset your choice or enter a new choice right away.
 
 When waiting, animation made with anime.js shows.
 
+## :pushpin: _GUI and examples_
+
+![Flickr Search App 1](/img/flickr1.png)
+
+![Flickr Search App 2](/img/flickr2.png)
+
+![Flickr Search App 3](/img/flickr3.png)
