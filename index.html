@@ -27,7 +27,6 @@
   </head>
   <body>
     <main class="column">
-        <div>
       <!-- Header -->
       <header>
         <h1>Flickr Search App</h1>
@@ -35,19 +34,21 @@
       <!-- Inputs and buttons-->
       <div class="menu">
         <div class="inputs">
-            <input type="text" placeholder="Enter text to search" id="text" />
+          <input type="text" placeholder="Enter text to search" id="text" />
+          <div class="row2">
             <select name="size" id="size">
-            <option value="default">Size:</option>
-            <option value="w">small</option>
-            <option value="z">medium</option>
-            <option value="b">large</option>
+              <option value="default">Size:</option>
+              <option value="w">small</option>
+              <option value="z">medium</option>
+              <option value="b">large</option>
             </select>
             <input type="number" placeholder="Quantity" id="quantity" />
+          </div>
         </div>
         <div class="buttons">
-        <button type="input" id="search">Search</button>
-        <button type="button" id="slide-switch">Slide show</button>
-        <button type="button" id="reset">Reset</button>
+          <button type="input" id="search">Search</button>
+          <button type="button" id="slide-switch">Slide show</button>
+          <button type="button" id="reset">Reset</button>
         </div>
       </div>
       <!-- End inputs and buttons -->
@@ -72,18 +73,11 @@
       <!-- End of slideshow gallery -->
       <!-- Gallery -->
       <div class="gallery row">
-        <!-- <img src="img/lens_512.png" id="index-img" /> -->
-        <picture>
-            <source
-              srcset="img/lens_192.png"
-              media="(max-width: 420px)"
-            />
-            <source
-              srcset="img/lens_256.png"
-              media="(max-width: 775px)"
-            />
-            <img src="img/lens_512.png" alt="lens" id="index-img"/>
-          </picture>
+        <picture id="lens-pic">
+          <source srcset="img/lens_192.png" media="(max-width: 420px)" />
+          <source srcset="img/lens_256.png" media="(max-width: 775px)" />
+          <img src="img/lens_512.png" alt="lens" id="lens-img" />
+        </picture>
       </div>
       <!-- End of gallery -->
       <!-- Message Modal -->
