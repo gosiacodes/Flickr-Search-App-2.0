@@ -12,7 +12,7 @@ You can also reset your choice or enter a new choice right away.
 
 When waiting, animation made with anime.js shows.
 
-## :pushpin: _GUI and examples_
+## :pushpin: _GUI examples_
 
 ![Flickr Search App 1](/img/flickr1.png)
 
